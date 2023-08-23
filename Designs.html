@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intent Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e0096afc3.js" crossorigin="anonymous"></script>
+</head>
+<body2>
+    <div class="centerd">
+    <img src="images/Story Board text header.jpg" alt="">
+    </div>
+    <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrolll()"> <i class="fa-sharp fa-solid fa-chevron-left"></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="design"><img class="design-img" src="images/work-1.jpg" alt="image"></div>
+                <div class="design"><img class="design-img" src="images/work-2.jpg" alt="image"></div>
+                <div class="design"><img class="design-img" src="images/work-3.jpg" alt="image"></div>
+                <div class="design"><img class="design-img" src="images/work-4.jpg" alt="image"></div>
+
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scrollr()"> <i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+    </body2>
+    <script>
+        function scrolll() {
+            var right = document.querySelector(".scroll-images")
+            right.scrollBy(350, 0)
+        }
+        function scrollr() {
+            var left= document.querySelector(".scroll-images")
+            left.scrollBy(-350, 0)
+        }
+    </script>
+</html>
+<!-- <i class="fa-sharp fa-solid fa-angle-left"></i> -->
